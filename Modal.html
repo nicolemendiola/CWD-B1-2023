@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modals</title>
+</head>
+<body>
+<h1 class="center">Modals</h1> 
+<div class="divider"></div>
+<div class="row">
+    <div class="col s12 m10">
+        <div class="container">
+        <p>
+            Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.
+        </p>
+        <br>
+        <a href="#modal1" class="btn waves-effect waves-light modal-trigger">Modal</a>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="image/pin3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <h2 class="pink-text">Modal Header</h2>
+                        <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+            
+        </div>
+        </div>
+        <h2 class="pink-text">Modal with Fixed Footer</h2>
+        <a href="#modal2" class="waves-effect waves-light btn modal-trigger">Modal with Fixed Footer</a>
+         <div id="modal2" class="modal modal-fixed-footer">
+
+                <div class="modal-content">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="image/pin5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <h3>Modal Header</h3>
+                            <p>You can customize the behavior of each modal using these options. For example, you can call a custom function to run when a modal is dismissed. To do this, just place your function in the intialization code as shown below</p>
+                        </div>
+                        <div class="col s6">
+                            <img src="image/image6.jpeg" alt="" class="responsive-img">
+                        </div>
+                        <div class="row">
+                        <div class="col s6">
+                            <img src="image/image5.jpeg" alt="" class="responsive-img">
+                        </div>
+                        <div class="col s6">
+                            <h3>Modal Header</h3>
+                            <p>You can customize the behavior of each modal using these options. For example, you can call a custom function to run when a modal is dismissed. To do this, just place your function in the intialization code as shown below</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="model-footer">
+                        <a href="" class="modal-close waves-effect waves-green btn-flat pink-text right">Click Here</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3 class="pink-text">Bottom Sheets Modals</h3>
+                <a href="#modal3" class="waves-effect waves-light btn modal-trigger">Modal bottom sheet style</a>
+                <div id="modal3" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="input-field">
+                                    <form action="">
+                                        <input type="text" class="datepicker" placeholder="date">
+                                        </form>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <div class="input-field">
+                                    <form action="">
+                                        <input type="text" class="timepicker" placeholder="time">
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+     <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+       $(document).ready(function() {
+            $('.modal').modal({
+                opacity: 0.8,
+                inDuration: 100
+            });
+            $('.datepicker').datepicker();
+            $('.timepicker').timepicker();
+  });
+</script>
+</body>
+</html>
